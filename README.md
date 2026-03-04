@@ -9,7 +9,7 @@ The goal of this project is to demonstrate how identity lifecycle management can
 
 # Project Scenario
 
-Contoso Retail Group is modernizing its identity infrastructure using Microsoft Entra ID while maintaining an on-premises Active Directory environment.
+Gelo Retail Group is modernizing its identity infrastructure using Microsoft Entra ID while maintaining an on-premises Active Directory environment.
 
 The organization requires:
 
