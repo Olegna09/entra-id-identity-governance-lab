@@ -70,3 +70,34 @@ Each user includes attributes used for identity governance:
 
 ![User](Images/P1-Users.png)
 
+
+---
+
+# Identity Provisioning
+
+Users are provisioned using two methods:
+
+- Microsoft Entra Admin Center (GUI)
+- Microsoft Graph PowerShell
+
+This demonstrates both manual and automated identity provisioning workflows.
+
+---
+
+# User Provisioning – GUI
+
+Steps:
+
+1. Navigate to Entra Admin Center
+2. Go to **Identity → Users**
+3. Select **New User**
+4. Enter required attributes
+
+Attributes configured:
+
+- Display Name
+- User Principal Name
+- Department
+- Job Title
+
+
