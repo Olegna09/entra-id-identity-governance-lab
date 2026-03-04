@@ -46,3 +46,27 @@ User Deprovisioning
 ↓  
 Hybrid Identity Synchronization
 
+
+---
+
+# Dataset
+
+The environment uses a sample dataset representing employees across multiple departments.
+
+Departments included:
+
+- Executives
+- IT
+- HR
+- Finance
+- Sales
+
+Each user includes attributes used for identity governance:
+
+- Display Name
+- Job Title
+- Department
+- User Principal Name
+
+
+
