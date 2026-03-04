@@ -28,7 +28,7 @@ This project demonstrates how these requirements can be implemented using Micros
 
 The following diagram illustrates the identity governance flow implemented in this lab.
 
-![Architecture Diagram](images/architecture-diagram.png)
+Images/P1 Architecture Diagram.png
 
 Flow Overview
 
