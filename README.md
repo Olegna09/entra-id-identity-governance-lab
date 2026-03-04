@@ -68,5 +68,5 @@ Each user includes attributes used for identity governance:
 - Department
 - User Principal Name
 
-
+![User](Images/P1-Users.png)
 
