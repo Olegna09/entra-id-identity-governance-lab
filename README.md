@@ -28,7 +28,7 @@ This project demonstrates how these requirements can be implemented using Micros
 
 The following diagram illustrates the identity governance flow implemented in this lab.
 
-[Images/P1 Architecture Diagram.png](https://github.com/Olegna09/entra-id-identity-governance-lab/blob/main/Images/P1%20Architecture%20Diagram.png)
+![Architecture Diagram](Images/P1 Architecture Diagram.png)
 
 Flow Overview
 
