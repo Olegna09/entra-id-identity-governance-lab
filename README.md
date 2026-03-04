@@ -46,6 +46,3 @@ User Deprovisioning
 ↓  
 Hybrid Identity Synchronization
 
-📌 **Screenshot to include here**
-
-Upload an architecture diagram and place it in:
