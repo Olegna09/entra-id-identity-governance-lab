@@ -86,18 +86,8 @@ This demonstrates both manual and automated identity provisioning workflows.
 
 # User Provisioning – GUI
 
-Steps:
+Users were provisioned with department attributes to support dynamic group membership and automated access assignment.
 
-1. Navigate to Entra Admin Center
-2. Go to **Identity → Users**
-3. Select **New User**
-4. Enter required attributes
 
-Attributes configured:
-
-- Display Name
-- User Principal Name
-- Department
-- Job Title
 
 
