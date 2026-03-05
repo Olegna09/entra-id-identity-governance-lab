@@ -96,7 +96,7 @@ You must do the following first before you start provisioning users using PowerS
 - Installs the base Microsoft Graph PowerShell module
 - Connects to Microsoft Graph
 
-![Must do first](Script/MUST-DO-FIRST.txt)
+[View Script](Script/MUST-DO-FIRST.txt)
 
 You need to sign in using your Microsoft account
 
