@@ -1,0 +1,11 @@
+New-MgUser `
+ -AccountEnabled:$true `
+ -DisplayName "Maria Lopez" `
+ -MailNickname "marialopez" `
+ -UserPrincipalName "maria.lopez@gelosec.onmicrosoft.com" `
+ -JobTitle "IT Support Specialist" `
+ -Department "IT" `
+ -PasswordProfile @{
+    ForceChangePasswordNextSignIn = $true;
+    Password = "TempP@ss123!"
+ }
