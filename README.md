@@ -98,7 +98,7 @@ You must do the following first before you start provisioning users using PowerS
 
 You need to sign in using your Microsoft account
 
-![Microsoftlogin](Images/User-Provisioining.png)
+![Microsoftlogin](Images/Connect-to-MgGraph.png)
 
 ## User Provisioning – PowerShell
 
