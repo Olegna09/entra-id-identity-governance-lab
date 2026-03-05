@@ -118,6 +118,10 @@ You need to sign in using your Microsoft account
 | Boolean Value | Represents true or false | `$true` |
 | Hashtable | Data structure that stores key-value pairs | `@{ Password = "123"; ForceChangePasswordNextSignIn = $true }` |
 
+As per checking in Entra ID, the user was added
+
+![UserAdded](Images/User-Added.png)
+
 
 
 
