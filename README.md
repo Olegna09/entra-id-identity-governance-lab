@@ -102,7 +102,7 @@ You need to sign in using your Microsoft account
 
 ## User Provisioning – PowerShell
 
-![PowerShellProvisioning](Images/User-Provisioining.png)
+![PowerShellProvisioning](Images/Powershell-Provisioning.png)
 
 ### Understanding the Script Components
 
