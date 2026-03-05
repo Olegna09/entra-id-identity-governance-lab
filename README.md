@@ -84,9 +84,17 @@ This demonstrates both manual and automated identity provisioning workflows.
 
 ---
 
-# User Provisioning – GUI
+## User Provisioning – GUI
 
 Users were provisioned with department attributes to support dynamic group membership and automated access assignment.
+
+![Architecture Diagram](Images/User-Provisioining.png)
+
+## User Provisioning – PowerShell
+
+
+
+
 
 
 
