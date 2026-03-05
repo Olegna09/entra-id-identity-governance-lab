@@ -88,12 +88,31 @@ This demonstrates both manual and automated identity provisioning workflows.
 
 Users were provisioned with department attributes to support dynamic group membership and automated access assignment.
 
-![Architecture Diagram](Images/User-Provisioining.png)
+![UserProvisioning](Images/User-Provisioining.png)
+
+## Must do before using PowerShell for provisioning
+You must do the following first before you start provisioning users using PowerShell:
+- Bypass Execution Policy
+- Installs the base Microsoft Graph PowerShell module
+- Connects to Microsoft Graph
+
+You need to sign in using your Microsoft account
+
+![Microsoftlogin](Images/User-Provisioining.png)
 
 ## User Provisioning – PowerShell
 
+![PowerShellProvisioning](Images/User-Provisioining.png)
 
+### Understanding the Script Components
 
+| Component | Explanation | Example |
+|-----------|-------------|---------|
+| Cmdlet | PowerShell command that follows a Verb-Noun format | `New-MgUser` |
+| Parameter | Tells the command how to behave or what data to use | `-DisplayName` |
+| String | Text value usually passed to parameters | `"Elon Musk"` |
+| Boolean Value | Represents true or false | `$true` |
+| Hashtable | Data structure that stores key-value pairs | `@{ Password = "123"; ForceChangePasswordNextSignIn = $true }` |
 
 
 
