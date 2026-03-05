@@ -106,6 +106,8 @@ You need to sign in using your Microsoft account
 
 ![PowerShellProvisioning](Images/Powershell-Provisioning.png)
 
+[View Script](Script/Create-Individual-User.txt)
+
 ### Understanding the Script Components
 
 | Component | Explanation | Example |
