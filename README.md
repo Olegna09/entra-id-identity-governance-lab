@@ -143,7 +143,7 @@ Take note that when we are uploading a csv file using PowerShell, we must use th
 - [PowerShell Format](Dataset/Bulk-users.csv)
 - [Entra Bulk Format](Dataset/UserCreateTemplate.csv)
 
-![PowerShell Bulk Creation](images/powershell-bulk-create.png)
+![PowerShell Bulk Creation](Images/Bulk-create-Powershell.png)
 
 
 
