@@ -1,0 +1,17 @@
+$users = Import-Csv "C:\Users\Root\Documents\Bulk-users.csv"
+
+foreach ($user in $users) {
+
+New-MgUser `
+ -AccountEnabled:$true `
+ -DisplayName $user.DisplayName `
+ -MailNickname ($user.DisplayName -replace " ","") `
+ -UserPrincipalName $user.UserPrincipalName `
+ -Department $user.Department `
+ -JobTitle $user.JobTitle `
+ -PasswordProfile @{
+    Password = "Temp@ss_2026"
+    ForceChangePasswordNextSignIn = $true
+ }
+
+}
