@@ -138,7 +138,10 @@ You can see the prompt when bulk operations are successful.
 
 ### PowerShell Automation
 
-Take note that when we are uploading a csv file using PowerShell, we must use the CSV specifically for PowerShell automation. Not the Microsoft Entra Bulk Template format. You can see sample csv file here
+Take note that when we are uploading a csv file using PowerShell, we must use the CSV specifically for PowerShell automation. Not the Microsoft Entra Bulk Template format. You can see sample csv file below:
+
+- [PowerShell Format](Dataset/Bulk-users.csv)
+- [Entra Bulk Format](Dataset/Bulk-users.csv)
 
 ![PowerShell Bulk Creation](images/powershell-bulk-create.png)
 
