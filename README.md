@@ -145,6 +145,97 @@ Take note that when we are uploading a csv file using PowerShell, we must use th
 
 ![PowerShell Bulk Creation](Images/Bulk-create-Powershell.png)
 
+[View Script](Script/Bulk-User-Creation.txt)
+
+## PowerShell Script Breakdown
+
+This script creates multiple users in Microsoft Entra ID by reading user information from a CSV file and using Microsoft Graph PowerShell.
+
+### 1. Import CSV Dataset
+
+```powershell
+$users = Import-Csv "C:\Users\Root\Documents\Bulk-users.csv"
+```
+
+Reads user data from the CSV file and stores it in the `$users` variable.
+
+---
+
+### 2. Loop Through Each User
+
+```powershell
+foreach ($user in $users) {
+```
+
+Iterates through each row in the CSV file so a user account can be created for every entry.
+
+---
+
+### 3. Create the User
+
+```powershell
+New-MgUser `
+```
+
+Creates a new user in Microsoft Entra ID using Microsoft Graph.
+
+---
+
+### 4. Enable the Account
+
+```powershell
+-AccountEnabled:$true
+```
+
+Ensures the user account is active after creation.
+
+---
+
+### 5. Set User Attributes
+
+```powershell
+-DisplayName $user.DisplayName
+-UserPrincipalName $user.UserPrincipalName
+-Department $user.Department
+-JobTitle $user.JobTitle
+```
+
+Assigns user profile attributes based on values from the CSV file.
+
+---
+
+### 6. Generate Mail Nickname
+
+```powershell
+-MailNickname ($user.DisplayName -replace " ","")
+```
+
+Creates a mail nickname by removing spaces from the display name.
+
+Example:
+
+```
+Maria Lopez → MariaLopez
+```
+
+---
+
+### 7. Set Password Profile
+
+```powershell
+-PasswordProfile @{
+   Password = "Temp@ss_2026"
+   ForceChangePasswordNextSignIn = $true
+}
+```
+
+Assigns a temporary password and forces the user to change it during the first login.
+
+---
+
+### Result
+
+The script automatically provisions multiple user accounts in Microsoft Entra ID using data from the CSV dataset.
 
 
 
