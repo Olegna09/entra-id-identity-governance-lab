@@ -134,7 +134,7 @@ Microsoft Entra ID has its own CSV file format, where you can download and input
 
 You can see the prompt when bulk operations are successful.
 
-![Bulk Upload](Bulk-Operation-successful.png)
+![Bulk Upload](Images/Bulk-Operation-successful.png)
 
 ### PowerShell Automation
 
