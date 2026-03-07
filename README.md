@@ -237,6 +237,9 @@ Assigns a temporary password and forces the user to change it during the first l
 
 The script automatically provisions multiple user accounts in Microsoft Entra ID using data from the CSV dataset.
 
+# User Creation Validation
+
+After running the PowerShell provisioning script, the newly created users were verified in Microsoft Entra ID.
 
 
 
