@@ -122,6 +122,18 @@ As per checking in Entra ID, the user was added
 
 ![UserAdded](Images/User-Added.png)
 
+## Bulk User Provisioning
+
+Users were provisioned in bulk using both GUI-based CSV upload and PowerShell automation.
+
+### GUI Bulk Creation
+
+![Bulk Upload](images/bulk-user-upload.png)
+
+### PowerShell Automation
+
+![PowerShell Bulk Creation](images/powershell-bulk-create.png)
+
 
 
 
