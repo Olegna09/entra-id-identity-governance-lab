@@ -128,9 +128,17 @@ Users were provisioned in bulk using both GUI-based CSV upload and PowerShell au
 
 ### GUI Bulk Creation
 
-![Bulk Upload](images/bulk-user-upload.png)
+Microsoft Entra ID has its own CSV file format, where you can download and input the user information and upload it after the list is created.
+
+![Bulk Upload](Images/Bulk-create-page.png)
+
+You can see the prompt when bulk operations are successful.
+
+![Bulk Upload](Bulk-Operation-successful.png)
 
 ### PowerShell Automation
+
+Take note that when we are uploading a csv file using PowerShell, we must use the CSV specifically for PowerShell automation. Not the Microsoft Entra Bulk Template format. You can see sample csv file here
 
 ![PowerShell Bulk Creation](images/powershell-bulk-create.png)
 
