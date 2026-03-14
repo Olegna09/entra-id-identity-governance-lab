@@ -243,3 +243,117 @@ After running the PowerShell provisioning script, the newly created users were v
 
 ![User-Created](Images/User-Automation-Created.png)
 
+# Automated Group Membership
+
+After users are provisioned, the next step in the identity lifecycle is **group management**. Groups are used to manage access efficiently by assigning permissions to a collection of users instead of configuring access individually.
+
+Group-based access control simplifies administration, improves scalability, and reduces the risk of inconsistent access assignments.
+
+In modern IAM environments, groups are commonly used to grant access to:
+
+- Applications
+- Shared resources
+- Network permissions
+- Role-based access control (RBAC)
+
+---
+
+# Group Creation
+
+When creating groups, it is important to understand the two primary membership models used in identity systems.
+
+## Assigned Groups (Static Membership)
+
+An **Assigned Group** is a group where membership is manually managed by administrators. Users must be explicitly added or removed from the group.
+
+### Example
+
+Finance team members are manually added to a group called:
+
+```
+Finance-Users
+```
+
+### Characteristics
+
+- Membership is controlled manually
+- Suitable for small teams or temporary access
+- Requires administrative intervention for every change
+
+### Limitations
+
+This method becomes difficult to manage in large organizations because:
+
+- Manual effort increases as the number of users grows
+- Higher risk of human error
+- Delayed access provisioning or removal
+- Increased administrative overhead
+
+Because of these limitations, static groups are typically used only for **special cases or temporary access control**.
+
+---
+
+## Dynamic Groups (Automated Membership)
+
+A **Dynamic Group** automatically manages membership based on predefined rules that evaluate user attributes.
+
+When a user's attributes match the defined rule, the user is automatically added to the group. If the attributes change and no longer match the rule, the user is removed from the group.
+
+This approach enables **automated access control** and significantly reduces manual administrative work.
+
+### Example
+
+A dynamic rule may automatically assign users to a group if their department attribute is Finance.
+
+Example rule logic:
+
+```
+user.department == "Finance"
+```
+
+Users who meet this condition are automatically added to:
+
+```
+Finance-Users
+```
+
+### Common Attributes Used for Dynamic Groups
+
+- Department
+- Job Title
+- Location
+- Employment Type
+- Business Unit
+
+### Benefits of Dynamic Groups
+
+- Automated access management
+- Reduced administrative workload
+- Consistent access assignments
+- Faster onboarding and offboarding
+- Reduced risk of incorrect permissions
+
+# Security Considerations
+
+To maintain secure and manageable group structures, organizations should follow these best practices:
+
+- Use **dynamic groups whenever possible** for scalable access management
+- Avoid excessive nested groups that can complicate permission tracking
+- Implement **naming conventions** for groups
+- Regularly review group memberships through **access reviews**
+- Ensure group membership aligns with the **principle of least privilege**
+
+---
+
+# IAM Lifecycle Integration
+
+Group membership automation plays a critical role in the identity lifecycle:
+
+| Lifecycle Stage | Role of Groups |
+|---|---|
+| Provisioning | Users automatically receive baseline access |
+| Role Changes | Access adjusts based on updated attributes |
+| Transfers | Group membership updates dynamically |
+| Deprovisioning | Access removed when identity is disabled |
+
+This ensures access remains aligned with the user's **current role and responsibilities**.
