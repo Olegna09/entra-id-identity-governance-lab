@@ -291,6 +291,31 @@ This method becomes difficult to manage in large organizations because:
 
 Because of these limitations, static groups are typically used only for **special cases or temporary access control**.
 
+## Creating an Assigned Group
+
+The image below shows an example of how to create an **Assigned Group** in Microsoft Entra ID.
+
+### Group Type
+
+In the **Group type** field, you are selecting how the group will be used in Microsoft Entra ID.
+
+For this example, the group type is set to **Security**, which is commonly used to manage access to applications, resources, and permissions.
+
+If you want to learn more about group types in Microsoft Entra ID, you can read my detailed explanation in my Medium blog here https://medium.com/@ALOBAH/microsoft-entra-identities-6374dfa28873.
+
+---
+
+### Microsoft Entra Roles Can Be Assigned to the Group
+
+This option determines whether the group can be used to assign **administrative roles** in Microsoft Entra ID.
+
+If this option is set to **Yes**, the group becomes a **role-assignable group**.
+
+This means you can assign **directory roles** to the group instead of assigning those roles directly to individual users.
+
+Using role-assignable groups improves administrative efficiency because permissions can be managed at the group level rather than individually for each user.
+
+
 ![Group-Creation](Images/Group-Creation.png)
 
 ---
