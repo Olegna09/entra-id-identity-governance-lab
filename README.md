@@ -361,6 +361,10 @@ You can see below the details of the group we created, highlighted.
 
 ![Group-Created](Images/Group-Created.png)
 
+As shown in the example, the user **Aiden Cole** is automatically added to the **SALES** group because the user's **department attribute** matches the dynamic group rule (`department = Sales`). When the attribute condition is met, Microsoft Entra ID automatically includes the user in the group.
+
+![Dynamic-Group-1](Images/User-Added-Dynamic.png)
+
 ### Benefits of Dynamic Groups
 
 - Automated access management
