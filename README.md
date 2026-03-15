@@ -291,6 +291,8 @@ This method becomes difficult to manage in large organizations because:
 
 Because of these limitations, static groups are typically used only for **special cases or temporary access control**.
 
+![Group-Creation](Images/User-Automation-Created.png)
+
 ---
 
 ## Dynamic Groups (Automated Membership)
@@ -308,14 +310,19 @@ A dynamic rule may automatically assign users to a group if their department att
 Example rule logic:
 
 ```
-user.department == "Finance"
+user.department == "Executives"
 ```
 
 Users who meet this condition are automatically added to:
 
 ```
-Finance-Users
+Executives
 ```
+![Dynamic-Group-1](Images/User-Automation-Created.png)
+
+![Dynamic-Group-2](Images/User-Automation-Created.png)
+
+![Group-Created](Images/User-Automation-Created.png)
 
 ### Common Attributes Used for Dynamic Groups
 
