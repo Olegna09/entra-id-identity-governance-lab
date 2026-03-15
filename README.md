@@ -353,6 +353,8 @@ Executives
 - Employment Type
 - Business Unit
 
+In this example, we only use department as their attributes.
+
 ![Dynamic-Group-2](Images/Dynamic-Group-2.png)
 
 You can see below the details of the group we created, highlighted. 
