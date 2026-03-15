@@ -291,7 +291,7 @@ This method becomes difficult to manage in large organizations because:
 
 Because of these limitations, static groups are typically used only for **special cases or temporary access control**.
 
-![Group-Creation](Images/User-Automation-Created.png)
+![Group-Creation](Images/Group-Creation.png)
 
 ---
 
@@ -318,11 +318,11 @@ Users who meet this condition are automatically added to:
 ```
 Executives
 ```
-![Dynamic-Group-1](Images/User-Automation-Created.png)
+![Dynamic-Group-1](Images/Dynamic-Group-1.png)
 
-![Dynamic-Group-2](Images/User-Automation-Created.png)
+![Dynamic-Group-2](Images/Dynamic-Group-2.png)
 
-![Group-Created](Images/User-Automation-Created.png)
+![Group-Created](Images/Group-Created.png)
 
 ### Common Attributes Used for Dynamic Groups
 
