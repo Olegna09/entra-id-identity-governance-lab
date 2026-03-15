@@ -345,10 +345,6 @@ Executives
 ```
 ![Dynamic-Group-1](Images/Dynamic-Group-1.png)
 
-![Dynamic-Group-2](Images/Dynamic-Group-2.png)
-
-![Group-Created](Images/Group-Created.png)
-
 ### Common Attributes Used for Dynamic Groups
 
 - Department
@@ -356,6 +352,12 @@ Executives
 - Location
 - Employment Type
 - Business Unit
+
+![Dynamic-Group-2](Images/Dynamic-Group-2.png)
+
+You can see below the details of the group we created, highlighted. 
+
+![Group-Created](Images/Group-Created.png)
 
 ### Benefits of Dynamic Groups
 
