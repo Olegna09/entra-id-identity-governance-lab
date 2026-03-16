@@ -439,7 +439,9 @@ Administration is delegated by **region** using **Administrative Units (AUs)**.
 Two regional AUs were created:
 
 - **PH AU** – Contains users located in the Philippines  
-- **SG AU** – Contains users located in Singapore  
+- **SG AU** – Contains users located in Singapore
+
+![AU-Ceation](Images/Delegated-Admin-Architecture.jpg)
 
 Each region is managed by a dedicated **IAM Analyst** assigned the **User Administrator role scoped to their respective AU**.
 
