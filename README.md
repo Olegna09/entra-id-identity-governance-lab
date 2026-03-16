@@ -409,7 +409,7 @@ The objective is to distribute operational identity management tasks to regional
 
 ## Architecture Diagram
 
-![Delegated Administration Architecture]([images/delegated-admin-architecture.png](https://drive.google.com/file/d/1lD0A3H5j_rhnOL8MCkgfGnRyi0L6P1Tv/view?usp=drive_link)
+https://drive.google.com/file/d/1lD0A3H5j_rhnOL8MCkgfGnRyi0L6P1Tv/view?usp=drive_link
 
 The diagram above illustrates the administrative hierarchy and responsibility boundaries implemented during this phase.
 
