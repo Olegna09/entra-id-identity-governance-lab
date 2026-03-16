@@ -378,7 +378,6 @@ As shown in the example, the user **Aiden Cole** is automatically added to the *
 To maintain secure and manageable group structures, organizations should follow these best practices:
 
 - Use **dynamic groups whenever possible** for scalable access management
-- Avoid excessive nested groups that can complicate permission tracking
 - Implement **naming conventions** for groups
 - Regularly review group memberships through **access reviews**
 - Ensure group membership aligns with the **principle of least privilege**
@@ -397,3 +396,121 @@ Group membership automation plays a critical role in the identity lifecycle:
 | Deprovisioning | Access removed when identity is disabled |
 
 This ensures access remains aligned with the user's **current role and responsibilities**.
+
+# Delegated Administration – Microsoft Entra ID
+
+## Overview
+
+This phase of the project demonstrates how **delegated administration** is implemented in **Microsoft Entra ID** to support a multi-region organization while maintaining **centralized identity governance**.
+
+The objective is to distribute operational identity management tasks to regional administrators and support teams without granting excessive privileges. This approach follows the principles of **least privilege** and **separation of duties**, which are essential in enterprise Identity and Access Management (IAM).
+
+---
+
+## Architecture Diagram
+
+![Delegated Administration Architecture]([images/delegated-admin-architecture.png](https://drive.google.com/file/d/1lD0A3H5j_rhnOL8MCkgfGnRyi0L6P1Tv/view?usp=drive_link)
+
+The diagram above illustrates the administrative hierarchy and responsibility boundaries implemented during this phase.
+
+---
+
+## Delegation Model
+
+### Global IAM
+
+The **Global IAM team** is responsible for overall identity governance across the tenant.
+
+Responsibilities include:
+
+- Identity architecture and governance
+- Privileged role management
+- Oversight of regional IAM operations
+- Protection of high-value executive identities
+
+The Global IAM team manages the **Executives Administrative Unit (AU)** to ensure that executive accounts remain centrally controlled.
+
+---
+
+### Regional IAM Analysts
+
+Administration is delegated by **region** using **Administrative Units (AUs)**.
+
+Two regional AUs were created:
+
+- **PH AU** – Contains users located in the Philippines  
+- **SG AU** – Contains users located in Singapore  
+
+Each region is managed by a dedicated **IAM Analyst** assigned the **User Administrator role scoped to their respective AU**.
+
+Regional IAM Analysts are responsible for:
+
+- Creating user accounts
+- Updating user attributes
+- Disabling or managing accounts within their region
+
+Because the role is **scoped to the Administrative Unit**, these administrators cannot manage users outside their assigned region.
+
+---
+
+### Executives Administrative Unit
+
+Executive identities are isolated in a dedicated **Executives AU**.
+
+This AU is managed exclusively by **Global IAM** to ensure that high-value accounts remain protected from regional administrative access.
+
+This design aligns with enterprise security practices for **privileged and sensitive identities**.
+
+---
+
+### Helpdesk Administration
+
+The **Helpdesk team** provides tenant-wide user support.
+
+They are assigned the **Helpdesk Administrator role**, allowing them to perform limited support tasks such as:
+
+- Password resets
+- Account unlocks
+- MFA reset assistance
+
+Helpdesk administrators **cannot create, delete, or modify user identities**, ensuring support activities remain within controlled boundaries.
+
+---
+
+### Department Structure
+
+Within each region, users belong to organizational departments:
+
+- HR  
+- IT  
+- Sales  
+- Finance  
+
+These departments represent the **business structure** of the organization.
+
+Department managers are responsible for **group ownership and membership management**, allowing them to control access to resources without requiring administrative permissions in Entra ID.
+
+---
+
+## Key Identity Governance Concepts
+
+This delegated administration model demonstrates several key IAM practices:
+
+- **Administrative delegation using Administrative Units**
+- **Regional scoping of identity administrators**
+- **Centralized protection of executive identities**
+- **Least privilege support roles**
+- **Separation of identity administration and access management**
+
+---
+
+## Outcome
+
+By implementing delegated administration with Administrative Units and scoped roles, the organization achieves:
+
+- Controlled distribution of administrative responsibilities  
+- Reduced reliance on Global Administrator privileges  
+- Regional operational efficiency  
+- Improved protection of privileged identities  
+
+This model reflects common identity governance practices used in **enterprise Microsoft Entra ID environments**.
