@@ -484,9 +484,22 @@ Creating Administrative Units is not complex; it becomes efficient and scalable 
 
 ![AU-Creation](Images/AU-Creation.png)
 
-With three Administrative Units in place, the next step is assigning users based on location. While manual assignment may work for a small number of users, it becomes inefficient at scale. To address this, automation through scripting is used to ensure consistent and scalable user assignment.
+Below is the Administrative Unit we created. 
 
 ![AU-Created](Images/AU-Created.png)
+
+We now need to assign users to the Administrative Units (AU). This can be done in three ways:
+
+- **Manual Assignment** – This approach is very tedious and not advisable, especially as the environment scales. For this reason, it will not be used in this implementation.
+
+- **Dynamic Membership (Query-Based)** – Users are automatically assigned based on attributes defined in a dynamic query.
+
+- **Script Automation** – Ensures long-term consistency and can handle edge cases such as incorrect or missing data.
+
+Below is the dynamic configuration of Administrative Units in Entra ID using a dynamic query.
+
+
+
 
 The script below evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
 
