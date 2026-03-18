@@ -488,7 +488,7 @@ With three Administrative Units in place, the next step is assigning users based
 
 ![AU-Created](Images/AU-Created.png)
 
-The script evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
+The script below evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
 
 ---
 
