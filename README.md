@@ -441,7 +441,6 @@ Two regional AUs were created:
 - **PH AU** – Contains users located in the Philippines  
 - **SG AU** – Contains users located in Singapore
 
-![AU-Ceation](Images/Delegated-Admin-Architecture.jpg)
 
 Each region is managed by a dedicated **IAM Analyst** assigned the **User Administrator role scoped to their respective AU**.
 
@@ -476,6 +475,20 @@ They are assigned the **Helpdesk Administrator role**, allowing them to perform 
 - MFA reset assistance
 
 Helpdesk administrators **cannot create, delete, or modify user identities**, ensuring support activities remain within controlled boundaries.
+
+---
+
+### Creating Administrative Unit 
+
+Creating Administrative Units is not complex; it becomes efficient and scalable when designed with a clear structure, defined roles, and a strong access governance strategy.
+
+![AU-Creation](Images/Delegated-Admin-Architecture.jpg)
+
+With three Administrative Units in place, the next step is assigning users based on location. While manual assignment may work for a small number of users, it becomes inefficient at scale. To address this, automation through scripting is used to ensure consistent and scalable user assignment.
+
+![AU-Created](Images/Delegated-Admin-Architecture.jpg)
+
+The script evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
 
 ---
 
