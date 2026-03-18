@@ -498,7 +498,7 @@ We now need to assign users to the Administrative Units (AU). This can be done i
 
 Below is the dynamic configuration of Administrative Units in Entra ID using a dynamic query.
 
-
+![AU-Created](Images/AU-Dynamic.png)
 
 
 The script below evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
