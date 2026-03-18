@@ -482,11 +482,11 @@ Helpdesk administrators **cannot create, delete, or modify user identities**, en
 
 Creating Administrative Units is not complex; it becomes efficient and scalable when designed with a clear structure, defined roles, and a strong access governance strategy.
 
-![AU-Creation](Images/Delegated-Admin-Architecture.jpg)
+![AU-Creation](Images/AU-Creation.png)
 
 With three Administrative Units in place, the next step is assigning users based on location. While manual assignment may work for a small number of users, it becomes inefficient at scale. To address this, automation through scripting is used to ensure consistent and scalable user assignment.
 
-![AU-Created](Images/Delegated-Admin-Architecture.jpg)
+![AU-Created](Images/AU-Created.png)
 
 The script evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
 
