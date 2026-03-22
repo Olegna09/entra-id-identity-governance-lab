@@ -496,12 +496,10 @@ We now need to assign users to the Administrative Units (AU). This can be done i
 
 - **Script Automation** – Ensures long-term consistency and can handle edge cases such as incorrect or missing data.
 
-Below is the dynamic configuration of Administrative Units in Entra ID using a dynamic query.
+I will be using Dynamic Membership in this implementation. Below is the dynamic configuration of Administrative Units in Entra ID using a dynamic query.
 
 ![AU-Created](Images/AU-Dynamic.png)
 
-
-The script below evaluates user attributes such as country and department, assigns users to the correct Administrative Unit, and removes them from incorrect ones to prevent drift.
 
 ---
 
