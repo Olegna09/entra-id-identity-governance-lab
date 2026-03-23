@@ -545,6 +545,10 @@ This model reflects common identity governance practices used in **enterprise Mi
 
 Custom Security Attributes in Microsoft Entra ID are used to store **authoritative identity classification data**, which is then consumed by policies and automation to support security and governance controls.
 
+The goal of this phase is to create an Attribute set containing the following:
+
+![CSA-Created](Images/CSA.png)
+
 ---
 
 ## Required Roles
