@@ -560,7 +560,7 @@ Before creating an Attribute Set, the following roles must be assigned:
 
 ## Creating an Attribute Set
 
-**CSA1 (Image)**
+![CSA-Created](Images/CSA1.png)
 
 After assigning the required roles, you can proceed with creating an Attribute Set.  
 This acts as a container for related attributes.
@@ -569,7 +569,7 @@ This acts as a container for related attributes.
 
 ## Adding Attributes
 
-**CSA2 (Image)**
+![CSA-Created](Images/CSA2.png)
 
 After creating the Attribute Set, attributes must be defined within it.
 
@@ -577,7 +577,7 @@ After creating the Attribute Set, attributes must be defined within it.
 
 ## Attribute Configuration
 
-**CSA3 (Image)**
+![CSA-Created](Images/CSA3.png)
 
 - **Attribute Name & Description**  
   Self-explanatory and should follow a consistent naming convention  
@@ -593,7 +593,7 @@ In this project, **String** is used with predefined values to ensure consistency
 
 ## Attribute Options
 
-**CSA4 (Image)**
+![CSA-Created](Images/CSA4.png)
 
 - **Allow multiple values to be assigned**
   - **Yes** → Multiple values can be assigned to a user  
@@ -609,7 +609,7 @@ In this project, **String** is used with predefined values to ensure consistency
 
 ## Attribute Set Created
 
-**CSA5 (Image)**
+![CSA-Created](Images/CSA5.png)
 
 At this stage, the Custom Security Attribute Set has been successfully created and is ready for assignment.
 
