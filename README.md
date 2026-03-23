@@ -243,7 +243,7 @@ After running the PowerShell provisioning script, the newly created users were v
 
 ![User-Created](Images/User-Automation-Created.png)
 
-# Automated Group Membership
+# PHASE II: Automated Group Membership
 
 After users are provisioned, the next step in the identity lifecycle is **group management**. Groups are used to manage access efficiently by assigning permissions to a collection of users instead of configuring access individually.
 
@@ -397,7 +397,7 @@ Group membership automation plays a critical role in the identity lifecycle:
 
 This ensures access remains aligned with the user's **current role and responsibilities**.
 
-# Delegated Administration – Microsoft Entra ID
+# PHASE III: Delegated Administration 
 
 ## Overview
 
@@ -541,7 +541,7 @@ By implementing delegated administration with Administrative Units and scoped ro
 
 This model reflects common identity governance practices used in **enterprise Microsoft Entra ID environments**.
 
-## Custom Security Attributes
+# PHASE IV: Custom Security Attributes
 
 Custom Security Attributes in Microsoft Entra ID are used to store **authoritative identity classification data**, which is then consumed by policies and automation to support security and governance controls.
 
