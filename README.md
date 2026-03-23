@@ -625,4 +625,32 @@ Custom Security Attributes:
 
 ---
 
+## Assigning Custom Security Attributes
+
+To assign a Custom Security Attribute:
+
+1. Go to the **User** in Microsoft Entra ID  
+2. Navigate to **Custom Security Attributes**  
+3. Click **Add assignment** and select the appropriate values  
+
+![CSA-Created](Images/CSA6.png)
+
+---
+
+## Example: Executive User
+
+For an Executive user, classification may include:
+
+- `riskLevel = Tier0` (High Risk)  
+- `dataSensitivityAccess = High`  
+
+![CSA-Created](Images/CSA7.png)
+
+---
+
+## Purpose
+
+Custom Security Attributes provide **identity classification** by acting as a tag or stamp on a user.
+
+They do **not grant access directly**, but are used by groups, policies, or automation to influence access decisions.
 
