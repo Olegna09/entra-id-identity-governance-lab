@@ -540,3 +540,89 @@ By implementing delegated administration with Administrative Units and scoped ro
 - Improved protection of privileged identities  
 
 This model reflects common identity governance practices used in **enterprise Microsoft Entra ID environments**.
+
+## Custom Security Attributes
+
+Custom Security Attributes in Microsoft Entra ID are used to store **authoritative identity classification data**, which is then consumed by policies and automation to support security and governance controls.
+
+---
+
+## Required Roles
+
+Before creating an Attribute Set, the following roles must be assigned:
+
+- **Attribute Definition Administrator** → Required to create and manage attribute sets  
+- **Attribute Assignment Administrator** → Required to assign attributes to users  
+
+> Note: The Global Administrator role does not have permission to create attribute sets by default, but it can be used to assign the required roles.
+
+---
+
+## Creating an Attribute Set
+
+**CSA1 (Image)**
+
+After assigning the required roles, you can proceed with creating an Attribute Set.  
+This acts as a container for related attributes.
+
+---
+
+## Adding Attributes
+
+**CSA2 (Image)**
+
+After creating the Attribute Set, attributes must be defined within it.
+
+---
+
+## Attribute Configuration
+
+**CSA3 (Image)**
+
+- **Attribute Name & Description**  
+  Self-explanatory and should follow a consistent naming convention  
+
+- **Data Type**
+  - String  
+  - Boolean  
+  - Integer  
+
+In this project, **String** is used with predefined values to ensure consistency.
+
+---
+
+## Attribute Options
+
+**CSA4 (Image)**
+
+- **Allow multiple values to be assigned**
+  - **Yes** → Multiple values can be assigned to a user  
+  - **No** → Only one value can be assigned  
+
+- **Only allow predefined values to be assigned**
+  - **Yes** → Values must be selected from the predefined list  
+  - **No** → Free-text values can be entered manually  
+
+> Best practice: Enable predefined values to maintain consistency and avoid misclassification.
+
+---
+
+## Attribute Set Created
+
+**CSA5 (Image)**
+
+At this stage, the Custom Security Attribute Set has been successfully created and is ready for assignment.
+
+---
+
+## ⚠️ Limitation
+
+Custom Security Attributes:
+
+- Can only be assigned to **users (and service principals)**  
+- Cannot be assigned to **Groups or Administrative Units (AUs)**  
+- Are **not directly usable in dynamic group membership rules**  
+
+---
+
+
