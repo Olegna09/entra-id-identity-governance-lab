@@ -73,7 +73,7 @@ Each user includes attributes used for identity governance:
 
 ---
 
-# Identity Provisioning
+# PHASE I: Identity Provisioning
 
 Users are provisioned using two methods:
 
