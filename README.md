@@ -656,5 +656,5 @@ For an Executive user, classification may include:
 
 Custom Security Attributes provide **identity classification** by acting as a tag or stamp on a user.
 
-They do **not grant access directly**, but are used by groups, policies, or automation to influence access decisions.
+Due to platform limitations, Custom Security Attributes are not directly used in dynamic group membership or Conditional Access. Instead, they serve as a controlled classification layer that can be leveraged for governance, reporting, and future automation.
 
