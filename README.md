@@ -658,7 +658,7 @@ Custom Security Attributes provide **identity classification** by acting as a ta
 
 Due to platform limitations, Custom Security Attributes are not directly used in dynamic group membership or Conditional Access. Instead, they serve as a controlled classification layer that can be leveraged for governance, reporting, and future automation.
 
-# Secure Deprovisioning Process
+# PHASE V: Secure Deprovisioning Process
 
 Secure deprovisioning ensures that when a user leaves the organization, all access is immediately revoked, privileges are removed, and organizational data is properly retained or transferred. This process is critical to prevent unauthorized access, data leakage, and orphaned identities.
 
