@@ -658,3 +658,133 @@ Custom Security Attributes provide **identity classification** by acting as a ta
 
 Due to platform limitations, Custom Security Attributes are not directly used in dynamic group membership or Conditional Access. Instead, they serve as a controlled classification layer that can be leveraged for governance, reporting, and future automation.
 
+# Secure Deprovisioning Process
+
+Secure deprovisioning ensures that when a user leaves the organization, all access is immediately revoked, privileges are removed, and organizational data is properly retained or transferred. This process is critical to prevent unauthorized access, data leakage, and orphaned identities.
+
+---
+
+## Deprovisioning Workflow
+
+### 1. Trigger Event
+
+Deprovisioning is initiated by:
+
+- HR system (preferred)  
+- Authorized administrative action  
+
+---
+
+### 2. Account Disablement
+
+- **Hybrid users:** Disable account in on-prem Active Directory  
+- **Cloud users:** Disable account in Microsoft Entra ID  
+
+> This step must occur immediately upon termination.
+
+---
+
+### 3. Revoke Active Sessions
+
+- Invalidate all active sessions  
+- Revoke refresh tokens  
+- Force sign-out from all devices  
+
+> Prevents continued access after account disablement.
+
+---
+
+### 4. Remove Group Memberships
+
+- Remove from all security groups  
+- Remove from Microsoft 365 groups  
+- Remove from role-assignable groups  
+
+> Groups represent access — this step eliminates inherited permissions.
+
+---
+
+### 5. Remove Roles and Privileges
+
+- Remove directory roles (e.g., admin roles)  
+- Remove Azure RBAC assignments  
+- Remove application roles  
+- Review Privileged Identity Management (PIM) assignments  
+
+---
+
+### 6. Block Sign-in
+
+- Explicitly set **"Block sign-in" = Enabled**
+
+> Adds an extra layer of protection beyond account disablement.
+
+---
+
+### 7. Data Retention and Transfer
+
+#### Exchange Online
+- Convert mailbox or delegate access to manager  
+- Apply retention policies if required  
+
+#### OneDrive
+- Transfer ownership to manager  
+- Configure retention period  
+
+#### Teams / SharePoint
+- Reassign ownership of files and groups  
+
+> Ensures no data is lost or left unmanaged.
+
+---
+
+### 8. License Removal
+
+- Remove assigned licenses **after** data handling is complete  
+
+> Prevents unintended data deletion.
+
+---
+
+### 9. Device and Access Cleanup
+
+- Remove registered and managed devices  
+- Remove access via endpoint management systems  
+- Validate compliance state  
+
+---
+
+### 10. Conditional Access Enforcement
+
+Ensure policies block:
+
+- Disabled accounts  
+- High-risk sign-ins  
+
+---
+
+### 11. Audit and Logging
+
+Record all deprovisioning actions:
+
+- Initiator  
+- Timestamp  
+- Actions performed  
+
+Store logs in:
+
+- Entra audit logs  
+- SIEM (if integrated)  
+
+---
+
+### 12. Soft Delete and Permanent Deletion
+
+- Keep account in a **disabled state** for a defined period (e.g., 30 days)  
+- Permanently delete after retention period  
+
+---
+
+## 📌 Summary
+
+Secure deprovisioning is a critical component of identity lifecycle management. By implementing a structured, automated, and auditable process, Gelo Retail Group ensures that access is properly terminated, risks are minimized, and compliance requirements are met in a hybrid identity environment.
