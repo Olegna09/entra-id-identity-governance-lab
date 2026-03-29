@@ -737,7 +737,7 @@ The problem with manually removing  the user from the group is that it doesn't w
 
 Block sign in is automatically triggered to M365 admin portal whenever you disable an account. 
 
-![Deprovision](Images/SDP5.png)
+![Deprovision](Images/SDP6.png)
 
 ---
 
