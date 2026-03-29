@@ -671,7 +671,9 @@ Secure deprovisioning ensures that when a user leaves the organization, all acce
 Deprovisioning is initiated by:
 
 - HR system (preferred)  
-- Authorized administrative action  
+- Authorized administrative action
+
+In my professional experience, this is done via email from HR and involves all the key personnel of that specific person like their Supervisors and Manager.
 
 ---
 
@@ -681,6 +683,8 @@ Deprovisioning is initiated by:
 - **Cloud users:** Disable account in Microsoft Entra ID  
 
 > This step must occur immediately upon termination.
+
+
 
 ---
 
