@@ -684,6 +684,7 @@ In my professional experience, this is done via email from HR and involves all t
 
 > This step must occur immediately upon termination.
 
+![Deprovision](Images/SDP1.png)
 
 
 ---
@@ -696,6 +697,9 @@ In my professional experience, this is done via email from HR and involves all t
 
 > Prevents continued access after account disablement.
 
+![Deprovision](Images/SDP2.png)
+
+
 ---
 
 ### 4. Remove Group Memberships
@@ -706,6 +710,12 @@ In my professional experience, this is done via email from HR and involves all t
 
 > Groups represent access — this step eliminates inherited permissions.
 
+![Deprovision](Images/SDP3.png)
+
+The problem with manually removing  the user from the group is that it doesn't work if your membership type is dynamic because dynamic rules are calculated automatically from rules. Instead, I just added an attribute that whenever the user account is disabled, it will automatically be removed from the group.
+
+![Deprovision](Images/SDP4.png)
+
 ---
 
 ### 5. Remove Roles and Privileges
@@ -713,7 +723,9 @@ In my professional experience, this is done via email from HR and involves all t
 - Remove directory roles (e.g., admin roles)  
 - Remove Azure RBAC assignments  
 - Remove application roles  
-- Review Privileged Identity Management (PIM) assignments  
+- Review Privileged Identity Management (PIM) assignments
+
+![Deprovision](Images/SDP5.png)
 
 ---
 
@@ -722,6 +734,10 @@ In my professional experience, this is done via email from HR and involves all t
 - Explicitly set **"Block sign-in" = Enabled**
 
 > Adds an extra layer of protection beyond account disablement.
+
+Block sign in is automatically triggered to M365 admin portal whenever you disable an account. 
+
+![Deprovision](Images/SDP5.png)
 
 ---
 
