@@ -1,8 +1,7 @@
 # Enterprise Identity Governance Lab – Microsoft Entra ID
 
 This project demonstrates the implementation of identity governance practices using Microsoft Entra ID.  
-The lab simulates an enterprise environment where identities are provisioned, managed, and governed using automated group membership, delegated administration, custom security attributes, and hybrid identity synchronization.
-
+The lab simulates an enterprise environment where identities are provisioned, managed, and governed using automated group membership, delegated administration, custom security attributes, and secure deprovisioning. 
 The goal of this project is to demonstrate how identity lifecycle management can be implemented in a modern cloud identity platform.
 
 ---
