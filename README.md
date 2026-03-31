@@ -18,7 +18,6 @@ The organization requires:
 - Delegated administration
 - Identity classification
 - Secure deprovisioning processes
-- Hybrid identity synchronization
 
 This project demonstrates how these requirements can be implemented using Microsoft Entra ID.
 
@@ -43,8 +42,7 @@ Administrative Units (Delegated Administration)
 Custom Security Attributes (Identity Classification)  
 ↓  
 User Deprovisioning  
-↓  
-Hybrid Identity Synchronization
+
 
 
 ---
