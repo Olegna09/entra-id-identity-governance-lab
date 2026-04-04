@@ -805,3 +805,57 @@ Store logs in:
 ## 📌 Summary
 
 Secure deprovisioning is a critical component of identity lifecycle management. By implementing a structured, automated, and auditable process, Gelo Retail Group ensures that access is properly terminated, risks are minimized, and compliance requirements are met in a hybrid identity environment.
+
+## 🔑 Key Takeaways from the Project
+
+### 1. IAM design must be intentional, not reactive
+Identity architecture should be driven by business processes, not assumptions. If your provisioning and access model isn’t aligned with real-world scenarios (joiners, movers, leavers, incidents), it will fail under pressure. Governance only works when it’s backed by enforceable policy and repeatable workflows—not ad hoc decisions.
+
+---
+
+### 2. Manual processes don’t scale—and they silently introduce risk
+I didn’t heavily automate this project, and that gap was obvious by the end.
+
+- Manual provisioning increases the probability of misconfiguration  
+- Repetitive tasks don’t just waste time—they degrade consistency  
+- At scale, “just this once” becomes systemic risk  
+
+Automation isn’t about convenience—it’s about **control, consistency, and auditability**.
+
+---
+
+### 3. Identity lifecycle management is where security actually lives
+Security isn’t just onboarding and offboarding.
+
+It’s about:
+
+- Enforcing least privilege continuously, not just at account creation  
+- Preventing orphaned accounts after role changes or exits  
+- Actively controlling privilege creep over time  
+
+If lifecycle governance is weak, everything else becomes a compensating control.
+
+---
+
+### 4. Zero Trust is not optional—it’s the baseline
+This project didn’t fully implement Conditional Access, but it made one thing clear: perimeter-based thinking is obsolete.
+
+Access decisions must continuously evaluate:
+
+- Who the user is  
+- What device they’re using  
+- Where they’re coming from  
+- What they’re trying to access  
+
+Anything less is implicit trust—and implicit trust is the problem.
+
+---
+
+### 5. The real shift is mindset, not tooling
+Tools like Microsoft Entra ID are just enablers. The real challenge is thinking in terms of:
+
+- "How do I reduce standing access?"  
+- "How do I make every JML event secure by default?"  
+- "How do I remove human dependency from critical identity processes?"  
+
+That’s the difference between configuring a system and **engineering identity governance**.
